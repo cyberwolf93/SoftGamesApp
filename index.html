@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html >
+    <head>
+       
+        <meta charset="UTF-8">
+        
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1.0, width=device-width, height=device-height, maximum-scale=1.0" />
+        
+        <link rel="stylesheet" href="style.css">
+        <title>Soft Games</title>
+    </head>
+    <body class="page-container" id="mainId">
+        <h1 id="name-field"></h1>
+        <h2 id="birth-field"></h2>
+
+        <div class="name">
+            <p class="first-name" style="display: inline-block;margin-right: 20px;">FirstName:</p>
+            <input id="first-name-text-field" type="text" >
+            <br/>
+            <p class="second-name" style="display: inline-block;">Second Name:</p>
+            <input id="second-name-text-field" type="text" >
+            <button class="sync" type="button" onclick="syncButtonClicked()">Sync</button>
+        </div>
+
+        <div class="birth-date">
+            <p style="display: inline-block;">Date of birth:</p>
+            <input id="date-text-field" type="text" >
+            <button class="async" type="button" onclick="asyncButtonClicked()">Async</button>
+        </div>
+        
+
+    </body>
+
+    <script type="text/javascript">
+        function syncButtonClicked() {
+            // let firstName = document.getElementById("first-name-text-field").value;
+            // let secondName = document.getElementById("second-name-text-field").value;
+
+            // var urlPrefix = "nativeapp://";
+            // window.location = urlPrefix + "parameters?first="+firstName+"&second="+ secondName;
+        }
+
+        function asyncButtonClicked() {
+            // let firstName = document.getElementById("first-name-text-field").value;
+            // let secondName = document.getElementById("second-name-text-field").value;
+            // window.webkit.messageHandlers.mergeNameMessageHandler.postMessage({firstName: firstName, secondName: secondName})
+        }
+
+        function writeName(name) {
+            document.getElementById("name-field").innerHTML = name
+        }
+    </script>
+</html>
