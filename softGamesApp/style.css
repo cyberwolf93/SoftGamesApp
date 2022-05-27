@@ -1,0 +1,46 @@
+div.name {
+    display: block;
+    width: 50%;
+    height: 200px;
+    margin: auto;
+}
+
+div.name p.first-name {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+div.name p.second-name,
+div.birth-date p {
+    display: inline-block;
+}
+
+div.name button.sync,
+div.birth-date button.async {
+    display: block;
+    width: 30%;
+    padding: 1%;
+    font-size: 15px;
+    background: blue;
+    color: white;
+}
+
+div.birth-date button.async {
+    background: green;
+}
+
+div.birth-date {
+    display: block;
+    width: 50%;
+    margin: auto;
+}
+
+
+button.send-notification {
+    display: block;
+    width: 30%;
+    padding: 2%;
+    font-size: 15px;
+    background: red;
+    color: white;
+}
