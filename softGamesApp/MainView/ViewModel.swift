@@ -47,7 +47,6 @@ class ViewModel {
     
     func handleNotificationWith(title: String, body: String) {
         NotificationsHandler.shared.registerNotificatioln(title: title, body: body)
-//        exit(0)
         UIControl().sendAction(#selector(NSXPCConnection.suspend),
                                to: UIApplication.shared, for: nil)
     }
